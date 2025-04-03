@@ -8,7 +8,7 @@ export default class Clock extends Component<ClockProps> {
     time: this.getTime(),
   };
 
-  timerId: number | null = 0;
+  timerId: number | null = null;
 
   getTime(): string {
     return new Date().toUTCString().slice(-12, -4);
